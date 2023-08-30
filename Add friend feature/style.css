@@ -46,26 +46,18 @@ body {
   margin-bottom: 12px;
 }
 
-#card #add {
+#card button {
   background-image: radial-gradient(
     circle farthest-corner at 10% 20%,
     rgba(176, 229, 208, 1) 42%,
     rgba(92, 202, 238, 0.41) 93.6%
   );
-  color:fff;
+  color: fff;
   padding: 12px 20px;
   font-weight: 700;
   border-radius: 6px;
   border: none;
+  margin: 5px;
+  cursor: pointer;
 }
-#card button{
-    margin: 5px;
-    cursor: pointer;
-}
-#card #remove{
-    background-color: #dadadd;
-    color: black;padding: 12px 20px;
-    font-weight: 700;
-    border-radius: 6px;
-    border: none;
-}
+
