@@ -25,8 +25,24 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    position: relative;
   }
 
   .box h1{
     font-size: 8vw;
+    position: relative;
+    z-index: 9;
+    /* mix-blend-mode: difference; */
+  }
+
+  .box img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all linear 0.3s;
   }
