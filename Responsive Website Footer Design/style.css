@@ -52,14 +52,15 @@ footer {
   color: #1da1f2;
 }
 
-.links {
+/* .links {
   display: flex;
-}
+} */
 
 footer .links {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 footer .links .box {
@@ -115,4 +116,11 @@ footer .links .box li .email {
 
 footer .links .box li .button {
   color: #4f46e5;
+}
+
+@media (max-width:900px) {
+  footer .links{
+    background-color: green;
+    margin: 12px auto;
+  }
 }
