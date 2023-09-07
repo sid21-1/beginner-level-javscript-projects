@@ -1,10 +1,18 @@
+/* Utility Classes */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+.text-color{
+    color: #7c3aed;
+    font-size: 25px;
+}
 
+
+/* Main class */
 body{
     background-color: #a5f3fc;
     display: flex;
@@ -16,11 +24,26 @@ body{
 
 
 .container{
-    background-color: white;
+    background-color: #FFFFFF;
     width: 80%;
     padding: 10px 20px;
+    border-radius: 1%;
+    box-shadow: 4px -14px 20px -20px rgba(0,0,0,0.45),
+25px 0px 20px -20px rgba(0,0,0,0.45),
+0px 25px 20px -20px rgba(0,0,0,0.45),
+-25px 0px 20px -20px rgba(0,0,0,0.45);
 }
 
 .content{
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-side{
+    text-align: center;
+}
+
+.left-side ,.right-side{
+    padding: 0 80px;
 }
