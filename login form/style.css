@@ -1,49 +1,77 @@
 /* Utility Classes */
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.text-color{
-    color: #7c3aed;
-    font-size: 25px;
+.text-color {
+  color: #7c3aed;
+  font-size: 25px;
 }
 
+.spacing {
+  padding: 12px 0;
+}
 
 /* Main class */
-body{
-    background-color: #a5f3fc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; 
+body {
+  background-color: #a5f3fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.container {
+  background-color: #ffffff;
+  width: 80%;
+  padding: 45px 50px;
+  border-radius: 1%;
+  box-shadow: 4px -14px 20px -20px rgba(0, 0, 0, 0.45),
+    25px 0px 20px -20px rgba(0, 0, 0, 0.45),
+    0px 25px 20px -20px rgba(0, 0, 0, 0.45),
+    -25px 0px 20px -20px rgba(0, 0, 0, 0.45);
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* LEFT SIDE of the form */
+
+.left-side {
+  text-align: center;
+}
+
+.spacing i {
+  padding: 10px 0;
+}
+
+.spacing p {
+  padding: 2px 0;
+}
+
+.left-side,
+.right-side {
+  padding: 0 80px;
+}
+
+/* Right Side of the form */
+.message{
+    position: relative;
+    top: -36px; 
+}
+
+form .message h2{
+    padding-bottom: 12px;
+}
+
+input textarea{
     width: 100%;
-}
-
-
-.container{
-    background-color: #FFFFFF;
-    width: 80%;
-    padding: 10px 20px;
-    border-radius: 1%;
-    box-shadow: 4px -14px 20px -20px rgba(0,0,0,0.45),
-25px 0px 20px -20px rgba(0,0,0,0.45),
-0px 25px 20px -20px rgba(0,0,0,0.45),
--25px 0px 20px -20px rgba(0,0,0,0.45);
-}
-
-.content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.left-side{
-    text-align: center;
-}
-
-.left-side ,.right-side{
-    padding: 0 80px;
+    height: 100%;
 }
