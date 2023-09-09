@@ -49,3 +49,51 @@
     width: 70%;
     text-align: center;
   }
+
+  #amount-box{
+    width: 80%;
+    height: 10%;
+    background-color: #148AA4;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 20px
+  }
+
+  #left-box{
+    /* width: fit-content; */
+    height: 100%;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .image-box img{
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+  }
+
+  .right-box a{
+
+  }
+
+  #paymentButton{
+    width: 80%;
+    height: 9%;
+    background-color: #353C93;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    font-size: large;
+    cursor: pointer;
+    border: none;
+  }
+
+  .cancel-box a{
+    text-decoration: none;
+    color: rgb(75, 75, 75);
+    font-weight: bold;
+    font-size: large;
+  }
