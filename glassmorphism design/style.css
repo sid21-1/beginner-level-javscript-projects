@@ -53,6 +53,8 @@ header {
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
+  position: relative;
+  z-index: 1;
 }
 
 header .navbar {
@@ -111,4 +113,50 @@ header .navbar .menu {
 
 .navbar .buttons input:hover {
   transform: scale(0.97);
+}
+
+.text-content{
+    width: 40%;
+    margin: 100px 0 0 50px;
+}
+
+.text-content h2{
+    font-size:27px ;
+    font-weight: 600;
+}
+
+.text-content p{
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.play-button{
+    position: absolute;
+    right: 50px;
+    bottom:20px;
+}
+
+.play-button .play-video{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.play-button .play-video::before{
+    content:'';
+    position: absolute;
+    height: 3px;
+    width: 50px;
+    background: #000;
+    left: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.play-button i{
+     height: 40px;
+     width: 40px;
+     border: 2px solid #000;
+     line-height: 38px;
+     text-align: center;
+     border-radius: 6px;
 }
