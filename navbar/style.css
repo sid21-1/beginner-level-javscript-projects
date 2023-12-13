@@ -1,0 +1,132 @@
+:root {
+  --header-height: 3rem;
+  --first-color: blue;
+  --first-color-light: grey;
+  --first-color-dark: rgb(41, 38, 38);
+  --first-color-white: #fbfbfb;
+  --body-font: sans-serif;
+  --nav-name-font-size: 1.5rem;
+  --normal-font-size: 0.987rem;
+  --z-fixed: 100;
+}
+
+@media screen and(min-width:768px) {
+  :root {
+    --nav-name-font-size: 1rem;
+    --normal-font-size: 1rem;
+  }
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: var(--header-height) 0 0 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bg-grid {
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: 100%;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--header-height);
+  padding: 0 1rem;
+  background-color: #fff;
+  z-index: var(--z-fixed);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.headerLogo {
+  color: var(--first-color-dark);
+}
+
+#header-toggle {
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    background-color: var(--first-color);
+    width: 80%;
+    height: 100vh;
+    padding: 2rem 0;
+    z-index: var(--z-fixed);
+    transition: 0.5s;
+    overflow-y: auto;
+  }
+}
+
+.navContent{
+    display: flex;
+    flex-direction: column;
+}
+
+.navPrefil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.navImg{
+    display: flex;
+    justify-content: center;
+    width: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.navImg img{
+    width: 70px;
+}
+
+.name{
+    display: block;
+    font-size: var(--nav-name-font-size);
+    color: var(--first-color-white);
+}
+
+.navItem{
+    margin-bottom: 2rem;
+}
+
+.navLink{
+    color: #fff;
+}
+
+.navLink:hover{
+    color: black;
+}
