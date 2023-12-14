@@ -15,11 +15,11 @@
   </head>
   <body>
     <header class="header">
-      <a href="#">Clay</a>
+      <a href="#" class="l">Siddhanth</a>
       <div class="headerLogo">
         <i class="fa-solid fa-bars" id="header-toggle"></i>
       </div>
-      <nav class="nav">
+      <nav class="nav" id="nav-menu">
         <div class="navContent bg-grid">
           <a href="#" class="navPrefil">
             <div class="navImg">
@@ -33,7 +33,22 @@
           <div class="navMenu">
             <ul class="navList">
               <li class="navItem"><a href="#" class="navLink">Home</a></li>
-              <li class="navItem"><a href="#" class="navLink">About </a></li>
+              <li class="navItem dropdown">
+                <a href="#" class="navLink dropdown-link"
+                  >About <i class="fa-solid fa-chevron-down dropdown-icon"></i
+                ></a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item">
+                    <a href="#" class="navLink">About Me</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="#" class="navLink">Location</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="#" class="navLink">Studies</a>
+                  </li>
+                </ul>
+              </li>
               <li class="navItem"><a href="#" class="navLink">Work</a></li>
               <li class="navItem"><a href="#" class="navLink">Skills</a></li>
               <li class="navItem"><a href="#" class="navLink">Contact</a></li>
