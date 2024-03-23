@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>XML API Request</h1>
+    <div style="height: 500px; width: 500px">
+      <img src="" alt="" />
+      <p></p>
+      <button>request send</button>
+    </div>
+  </body>
+  <script>
+    const image = document.querySelector("img");
+    const followers = document.querySelector("p");
+    const button = document.querySelector("button");
+
+    button.addEventListener("click", () => {
+      const requestUrl = "https://api.github.com/users/sid21-1";
+      const xml = new XMLHttpRequest();
+      xml.open("GET", requestUrl);
+      xml.onreadystatechange = function () {
+        console.log(xml.readyState);
+        if (xml.readyState === 4) {
+          const data = JSON.parse(this.responseText);
+          image.src = data.avatar_url;
+          followers.textContent = `Followers: ${data.followers}`;
+        }
+      };
+      xml.send();
+    });
+  </script>
+</html>
