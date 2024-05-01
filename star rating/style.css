@@ -1,0 +1,14 @@
+body {
+  background-color: grey;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.star {
+  border: none;
+  background: unset;
+  font-size: 3rem;
+  color: yellow;
+}
